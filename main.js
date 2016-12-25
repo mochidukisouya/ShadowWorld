@@ -1,5 +1,5 @@
 
-
+var test;
 //var player = document.getElementById("myCanvas");
 //var ctx = player.getContext("2d");
 var playerStatus={
@@ -26,12 +26,6 @@ function createEmeny(imgSrc) {
 	DOM.src = imgSrc;
 	return DOM;
 }
-
-
-
-//obstacles.push(createEmeny("B_obstacle-.jpg"));
-
-
 
 setInterval(drawAll, 32);
 function drawAll() {
@@ -118,8 +112,8 @@ var Bzone_obstacleStatus={
 function  delay(){
 	var W_zone_delay = Math.floor(Math.random() * 2000+1000);
 	var B_zone_delay = Math.floor(Math.random() * 2000+1000);
-	console.log(W_zone_delay);
-	console.log(B_zone_delay);
+	// console.log(W_zone_delay);
+	// console.log(B_zone_delay);
 	setInterval(WzoneObstacles, W_zone_delay);
 	setInterval(BzoneObstacles, B_zone_delay);
 }
